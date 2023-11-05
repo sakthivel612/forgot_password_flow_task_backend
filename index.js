@@ -24,9 +24,11 @@ module.exports = router;
 
 const mongoose = require("mongoose");
 const dbUrl =
-  "mongodb+srv://Sakthivel:Sakthivel@612@cluster0.e915zlr.mongodb.net/forgot_password_db?retryWrites=true&w=majority";
+  "mongodb+srv://Sakthivel:Sakthivel612@cluster0.e915zlr.mongodb.net/forgot_password_db?retryWrites=true&w=majority";
 // mongodb+srv://Sakthivel:Sakthivel@612@cluster0.e915zlr.mongodb.net/forgot_password_db?retryWrites=true&w=majority
+console.log(dbUrl);
 mongoose.connect(dbUrl);
+
 const db = mongoose.connection;
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
