@@ -23,8 +23,9 @@ app.post("/forgot-password", (req, res) => {
 module.exports = router;
 
 const mongoose = require("mongoose");
-const dbUrl = "mongodb://127.0.0.1:27017/forgot_password_db";
-
+const dbUrl =
+  "mongodb+srv://Sakthivel:Sakthivel@612@cluster0.e915zlr.mongodb.net/forgot_password_db?retryWrites=true&w=majority";
+// mongodb+srv://Sakthivel:Sakthivel@612@cluster0.e915zlr.mongodb.net/forgot_password_db?retryWrites=true&w=majority
 mongoose.connect(dbUrl);
 const db = mongoose.connection;
 
